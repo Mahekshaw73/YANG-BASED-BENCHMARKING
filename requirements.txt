@@ -1,0 +1,25 @@
+# DNSSEC Benchmarking Tool Requirements
+
+# Core dependencies
+dnspython>=2.3.0
+scapy>=2.5.0
+pandas>=1.5.0
+matplotlib>=3.6.0
+
+# YANG model support
+pyang>=2.5.0
+pyangbind>=0.8.0
+
+# Additional utilities
+asyncio-mqtt>=0.11.0
+aiofiles>=23.0.0
+click>=8.0.0
+
+# Optional: For enhanced PCAP analysis
+pyshark>=0.6.0
+
+# Development dependencies (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=5.0.0

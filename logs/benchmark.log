@@ -1,0 +1,54 @@
+2025-10-15 05:34:27,957 - capture - INFO - Starting PCAP capture on interface: any
+2025-10-15 05:34:27,971 - capture - ERROR - Scapy capture error: Interface 'any' not found !
+2025-10-15 05:34:29,064 - metrics - INFO - Processing 0 captured packets
+2025-10-15 05:34:29,064 - metrics - INFO - Matched 0 query-response pairs
+2025-10-15 05:34:29,064 - metrics - INFO - Processed 0 query results
+2025-10-15 05:41:40,758 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 05:41:41,763 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 05:41:43,006 - metrics - INFO - Processing 0 captured packets
+2025-10-15 05:41:43,007 - metrics - INFO - Matched 0 query-response pairs
+2025-10-15 05:41:43,007 - metrics - INFO - Processed 0 query results
+2025-10-15 05:44:11,970 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 05:44:12,977 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 05:44:13,569 - metrics - INFO - Processing 0 captured packets
+2025-10-15 05:44:13,569 - metrics - INFO - Matched 0 query-response pairs
+2025-10-15 05:44:13,569 - metrics - INFO - Processed 0 query results
+2025-10-15 05:48:47,149 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 05:48:48,155 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 05:49:58,775 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 05:49:59,781 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 05:53:29,217 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 05:53:30,222 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:14:47,694 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:14:48,699 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:15:51,061 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:15:52,066 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:17:28,788 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:17:29,749 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:17:29,791 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:17:29,816 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:20:13,894 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:20:14,899 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:26:00,635 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:26:01,640 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:32:34,443 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:32:35,447 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:39:26,169 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:39:27,174 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:40:01,019 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:40:02,024 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:45:02,427 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:45:03,431 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:47:16,990 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:47:17,994 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 06:49:33,865 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 06:49:34,870 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 16:50:51,626 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 16:51:54,171 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 16:51:55,176 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 16:52:52,943 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 16:52:53,948 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 17:14:52,545 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 17:14:53,549 - capture - WARNING - Error parsing DNS packet: flags
+2025-10-15 17:18:39,329 - capture - INFO - Starting PCAP capture on interface: wlan1
+2025-10-15 17:18:40,335 - capture - WARNING - Error parsing DNS packet: flags

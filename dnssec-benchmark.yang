@@ -1,0 +1,147 @@
+module dnssec-benchmark {
+  yang-version 1.1;
+  namespace "urn:ietf:params:xml:ns:yang:dnssec-benchmark";
+  prefix "dnssec-bm";
+
+  organization
+    "IETF Benchmarking Methodology Working Group";
+  
+  contact
+    "WG Web: <https://datatracker.ietf.org/wg/bmwg/>
+     WG List: <mailto:bmwg@ietf.org>
+     
+     Editor: Network Tester Configuration
+             <mailto:example@example.com>";
+
+  description
+    "This module defines the configuration and state data for
+     DNSSEC resolver performance benchmarking tool.";
+
+  revision 2024-01-01 {
+    description
+      "Initial version of DNSSEC benchmark configuration model.";
+    reference
+      "draft-ietf-bmwg-network-tester-cfg";
+  }
+
+  container benchmark-session {
+    description
+      "Configuration and state for DNSSEC benchmark session";
+    
+    leaf target-ip {
+      type string;
+      mandatory true;
+      description
+        "Target DNS resolver IP address";
+    }
+    
+    leaf port {
+      type uint16;
+      default 53;
+      description
+        "Target DNS resolver port number";
+    }
+    
+    leaf dnssec-enabled {
+      type boolean;
+      default true;
+      description
+        "Enable DNSSEC validation for queries";
+    }
+    
+    leaf query-count {
+      type uint32;
+      mandatory true;
+      description
+        "Total number of DNS queries to send";
+    }
+    
+    leaf rate-limit {
+      type decimal64 {
+        fraction-digits 2;
+      }
+      default 100.00;
+      description
+        "Query rate limit (queries per second)";
+    }
+    
+    leaf timeout {
+      type uint32;
+      default 5000;
+      description
+        "Query timeout in milliseconds";
+    }
+    
+    leaf capture-interface {
+      type string;
+      default "any";
+      description
+        "Network interface for PCAP capture";
+    }
+    
+    list domains {
+      key "name";
+      description
+        "List of domain names to query";
+      
+      leaf name {
+        type string;
+        description
+          "Domain name to query";
+      }
+      
+      leaf query-type {
+        type string;
+        default "A";
+        description
+          "DNS query type (A, AAAA, MX, etc.)";
+      }
+    }
+    
+    container results {
+      config false;
+      description
+        "Benchmark results and statistics";
+      
+      leaf total-queries {
+        type uint32;
+        description
+          "Total number of queries sent";
+      }
+      
+      leaf successful-responses {
+        type uint32;
+        description
+          "Number of successful responses received";
+      }
+      
+      leaf cache-hits {
+        type uint32;
+        description
+          "Number of cache hits detected";
+      }
+      
+      leaf cache-misses {
+        type uint32;
+        description
+          "Number of cache misses detected";
+      }
+      
+      leaf average-latency {
+        type decimal64 {
+          fraction-digits 3;
+        }
+        description
+          "Average query latency in milliseconds";
+      }
+      
+      leaf dnssec-overhead {
+        type decimal64 {
+          fraction-digits 3;
+        }
+        description
+          "DNSSEC validation overhead in milliseconds";
+      }
+    }
+  }
+}
